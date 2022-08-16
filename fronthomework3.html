@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id1"></div>
+<!-- if (a + b < 4) {
+        result = 'Мало';
+      } else {
+        result = 'Много';
+      } -->
+      <script>
+// задание 1
+// тернарный оператор
+let a = 2
+let b = 1
+
+
+// let result = (a + b < 4) ? 'Мало' : 'Много';
+// console.log(result)
+// switch
+// switch  (a + b < 4) {
+// case (true): 
+// alert("мало")
+//     break;
+// case (false):
+//     alert("много")
+//     break;
+//     default:
+//     alert("неизвестно")
+
+
+//     }  
+     
+////////// задание 2
+let s = ""
+let k = 1
+let d = prompt("Сколько вам нужно блоков <div>?")
+let p = prompt("Сколько вам нужно картинок? (1-11)") 
+ 
+for (i=1; i<=d; i++){
+  
+s += "<div>"
+
+for (j=1; j<=p; j++) {
+
+  s +=  `<img src="images/${k++}.jpg">`
+  s += "</div>"
+
+}
+
+}
+id1.innerHTML = s
+     </script>
+</body>
+</html>

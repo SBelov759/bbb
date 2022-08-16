@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ let admin
+ let name = 'василий'
+    admin = name
+alert(admin)
+console.log(admin)
+</script>
+
+<img id="img1" src="images/1.jpg" alt="">
+<script>
+
+n = prompt("Какой нужен номер картинки? (1-11)")
+
+f = prompt("Какой формат вам необходим, jpg или png?")
+
+if (n >= 1 && n <= 11) {
+
+    img1.src = `images/${n}.jpg`
+}
+else {
+alert("неверный номер, будет выведена картинка по умолчанию")
+}
+if (f === 'jpg' || f === 'png')  {
+
+img1.src = `images/1.${f}`
+}
+else {
+alert("неверный формат, будет выведена картинка с форматом по умолчанию")
+}
+// img1.src = alert('error')
+
+
+</script>
+</body>
+</html>

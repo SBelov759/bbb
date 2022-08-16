@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="box"></div>
+    <!-- s  += `<img src="images/1.jpg" style="border: 5px solid green">` -->
+    <script>
+//         s = ""
+//         n = ""
+
+//         while (n <= 11){
+// if (n % 2 == 0)
+// s += `<img src="images/${n}.jpg" style="border: 5px solid green">`
+
+//         }
+//     else {
+//         s += `<img src="images/${n}.jpg" style="border: 5px solid blue">`
+//     }
+
+// n++
+
+// box.innerHTML = s
+
+let s = ''
+let n = 1
+myColor = ""
+
+if (n % 2 == 0) 
+myColor = "red"
+else 
+myColor = "teal"
+s += `<img src="images/${n}.jpg" style="border: 5px solid ${myColor};">`
+n++
+
+box.innerHTML = s
+
+</script>
+
+
+    </body>
+</html>

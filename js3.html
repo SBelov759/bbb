@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="img1" src="images/1.jpg" alt="">
+
+
+<script> 
+n = prompt("введите номер картинки (1-11)",2);
+// Логические операторы
+//  && - и
+// ||- или 
+// img1.src = "images/"+ n +".jpg"
+if (n >= 1 && n <= 11) {
+// true
+img1.src = `images/${n}.jpg`
+}
+else {
+// false
+alert("неверный номер, будет выведена картинка по умолчанию")
+}
+
+//  shift+tab сдвинуть строку влево
+// tab - вправо
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- в цикле ввести 3 числа и найти сумму -->
+<body>
+    
+<p id="id1"> </p>
+<script>
+let n;
+let sum = 0, numbers = '';
+
+const MAX = 3
+
+for (i=1; i<=MAX; i++){
+    // n = +prompt(`введите ${i}-е число: `)
+    n = +prompt(`введите ${i}/${MAX}`)
+sum += n
+
+
+if (i == MAX) 
+numbers += n + ' ';
+else numbers += n + " + "
+
+}
+// id1.innerHTML = 'сумма равна ' + sum
+// // или id1.innerHTML = `Сумма + ""${sum}`;
+
+id1.innerHTML =  `${numbers} = ${sum}`;
+</script>
+
+
+</body>
+</html>

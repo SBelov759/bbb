@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id1">
+    <!-- <img id="img1" src="images/minsk.jpg" width="50">
+    <img id="img1" src="images/minsk.jpg" width="100">
+    <img id="img1" src="images/minsk.jpg" width="150"> -->
+</div>
+    <script>
+// вывести картинку minsk.jpg столько раз, сколько меняется ширина от 50 до 1000 пикс. с шагом 50 пикс.
+let w = 50;
+let s = "";
+
+while (w <= 1000) {
+s += `<img src="images/minsk.jpg" width="${w}">`
+w += 50 //изменение параметров цикла 
+
+
+} 
+
+id1.innerHTML = s;
+    </script>
+
+
+</body>
+</html>
