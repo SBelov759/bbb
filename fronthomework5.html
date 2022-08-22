@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div id="id1">
+    <h1>Создать меню</h1>
+
+  <form>
+    <p> Пункты меню:
+    <input type="text" id="text1" placeholder="Введите пункты меню" size="50"> 
+    <label>
+</p>
+<p> Цвет текста:
+  <input type="color" name="usercolor"
+     value="#F6FCFD">
+</p>
+<p> Цвет фона:
+  <input type="color" name="usercolor1"
+     value="#34ACDF">
+</p>
+<p> Цвет hover:
+  <input type="color" name="usercolor2"
+     value="#F96F24">
+</p>
+</label>
+<input type="button" value="Сoздать меню" onclick="getMenu ()"> 
+</form>
+<div id="id2">   </div>
+ 
+  
+  
+  
+  <script>
+///// задание 3
+function getMenu () {
+input = document.getElementById('text1')
+let string = ''
+let arrMenu = []
+let elMenu = ''
+arrMenu.push(input.value)
+
+//// не выходит применить метод split
+
+
+
+id2.innerHTML = arrMenu[0]
+console.log(arrMenu)
+return arrMenu
+
+}
+
+
+
+
+
+
+///// задание 1
+
+// function sumIn() {
+// let numbers = [];
+// while (true) {
+
+// let value = prompt("Введите число", 0);
+
+
+// if (value === "" || value === null || !isFinite(value)) break;
+
+// numbers.push(+value);
+// }
+// let sum = 0;
+//   for (let number of numbers) {
+//     sum += number;
+//   }
+//   return sum;
+// }
+
+// alert( sumIn() );
+
+
+///////////задание 2
+// function getMaxOfArray() {
+//   let numbers = [];
+// while (true) {
+//   let v = prompt("Введите число из массива", 0);
+//   if (v === "" || v === null || !isFinite(v)) break;
+//   numbers.push(+v) // + чтобы данные в массив сразу шли как number, а не как string
+//   console.log(numbers)
+//   }
+// function index_max(numbers) {
+// let i, maxV, maxP;
+// for( i = 0; i < numbers.length; i++) {
+// if( typeof maxV === "undefined" || numbers[i] > maxV ) {
+// maxV = numbers[i];
+// maxP = i;
+// }
+// }
+//   return maxP;
+// }
+// message = `Максимальный индекс числа в массиве:  ${index_max(numbers)}`
+// alert(message)
+// return Math.max.apply(null, numbers);
+// }
+// message2 = `А максимальное значение элемента в массиве = ${getMaxOfArray()}`
+// alert(message2)
+
+  </script>  
+</body>
+</html>
