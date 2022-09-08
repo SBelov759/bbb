@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+        <article>
+        <p>Alphabet</p>
+        <section>    
+        <p> A B C D E F G </p>
+        <p>come on out and play with me.</p>
+        <p>H I J </p>
+        <p>come and play.</p> 
+        <p>K L M </p>
+        <p>come with them. </p>
+        <p>N O P </p>
+        <p>near the tree. </p>
+        <p>Q R S T U V </p>
+        <p>Oh, how happy we will be. </p>
+        <p>W X Y Z </p>
+        <p>Lot's of fun for you and me. </p>
+        </section>
+</article>    
+<div id="id1"></div>
+<button onclick="change()">Изменить</button>
+<script>
+let s = ""
+
+function change() { 
+  
+   
+let css1 = document.querySelectorAll("p:nth-child(odd)")
+for (i=1; i<css1.length; i++) {
+   
+          
+console.log(css1[i].textContent)
+id1.innerHTML += css1[i].textContent
+}    
+let myLinks = document.getElementsByTagName('p') 
+for (l=1; l < myLinks.length; l++) { 
+        myLinks[l].style= `color: white;
+                background: blue;
+                border: 3px solid green;
+                width: 120px;`}
+}  
+
+ 
+
+</script>
+
+</body>
+</html>
